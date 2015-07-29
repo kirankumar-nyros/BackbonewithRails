@@ -1,0 +1,12 @@
+<div id="groups">asdas</div>
+
+<script type="text/javascript">
+  $(function() {
+    // Flow is the app name
+    window.router = new Flow.Routers.GroupsRouter({groups: <%= @groups.to_json.html_safe -%>})
+    
+    Backbone.history.start();
+    Backbone.history.stop();
+
+  });
+</script>

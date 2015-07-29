@@ -1,0 +1,24 @@
+@CHARSET "UTF-8";
+
+@CHARSET "UTF-8";
+
+body {
+	
+	text-align: center;
+	font-size: 14px;
+	font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	}
+
+.dialog label {
+	width:90px;
+	    float:left;
+}
+
+.dialog .field {
+	width:170px;	
+}
+
+#calendar {
+	width: 1000px;
+	margin: 0 auto;
+}

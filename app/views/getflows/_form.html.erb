@@ -1,0 +1,30 @@
+<%= form_for(@getflow) do |f| %>
+  <% if @getflow.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@getflow.errors.count, "error") %> prohibited this getflow from being saved:</h2>
+
+      <ul>
+      <% @getflow.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="project">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+
+  </div>
+  <div class="project">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :completed %><br>
+    <%= f.check_box :completed %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,17 @@
+<div id ="events">asdfghjkl</div>
+			
+<%= render :partial => 'getflows/calendar' %>
+
+<script type="text/javascript">
+  $(function() {
+    // Flow is the app name
+    window.router = new Flow.Routers.EventsRouter({events: <%= @events.to_json.html_safe -%>});
+    Backbone.history.stop();
+    Backbone.history.start();
+  });
+
+</script>
+<%= render 'form' %>
+
+
+	

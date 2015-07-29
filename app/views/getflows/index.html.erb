@@ -1,0 +1,17 @@
+<div id="getflows">
+
+	<h1>Go to Projects to create new project </h1>
+		<img src="images/oops.jpg">
+</div>
+
+<script type="text/javascript">
+  $(function() {
+    // Flow is the app name
+    window.router = new Flow.Routers.GetflowsRouter({getflows: <%= @getflows.to_json.html_safe -%>, todos: <%= @todos
+    	.to_json.html_safe -%>, groups: <%= @groups.to_json.html_safe  -%>}) 
+	  Backbone.history.stop();	  	  
+   	  Backbone.history.start();
+
+
+  });
+</script>

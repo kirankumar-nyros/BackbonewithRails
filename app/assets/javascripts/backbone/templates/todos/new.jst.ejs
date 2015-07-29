@@ -1,0 +1,39 @@
+
+<form id="new-todo" name="todo">
+  <div class="field">
+     <input type="text"  name="content" id="content" value="<%= content %>"  class="pname fa fa-plus"  placeholder="New task" required style="padding-left: 25px;">
+     <i class="fa fa-plus" style="float: left;
+    margin: -28px 0px 0px 4px;
+    position: absolute;"></i>
+     <i class="fa fa-calendar" style="float: right;
+  margin: -28px 100px 0px 4px;
+  position: relative;"></i>
+    <i class="fa fa-user" style="float: right;
+  margin: -28px 70px 0px 4px;
+  position: relative;" ></i>
+  <i class="fa fa-tag" style="float: right;
+  margin: -28px 10px 0px 4px;
+  position: relative;"></i>
+   <i class="fa fa-signal" style="float: right;
+  margin: -28px 40px 0px 4px;
+  position: relative;"></i>
+  </div>
+</form>
+
+<script>
+$(document).ready(function(){
+	$('#content').bind('click hover', function(){
+		$('.fa-plus').css("color", "#279af2");
+	});
+	$('#content').mouseleave(function(){
+		$('.fa-plus').css("color", "black");
+	});
+});
+</script>
+
+<style>
+ .fa-user:hover{
+ color: red;
+
+ }
+</style>

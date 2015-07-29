@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @getflow.name %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @getflow.title %>
+</p>
+
+<p>
+  <strong>Completed:</strong>
+  <%= @getflow.completed %>
+</p>
+
+<%= link_to 'Edit', edit_getflow_path(@getflow) %> |
+<%= link_to 'Back', getflows_path %>
